@@ -1,0 +1,36 @@
+{
+  "tasks": {
+    "task-update":{
+      "type": "update",
+      "parameters":{
+        "files": ["1.xlsx", "2.xlsx"],
+        "excel": "standard/manual",
+        "vba": "./vba/Excel_update.bas",
+        "archive": {
+          "flag": "no",
+          "path": "\\filepath"
+          }
+      },
+      "schedule": {
+        "days": [],
+        "time": []
+      }
+    },
+
+    "task-download":{
+      "type": "download",
+      "parameters":{
+        "connection-string": "",
+        "query": "1.sql",
+        "destination":{
+          "file-type": ".xlsx",
+          "file-path": "\\path\\to\\file"
+        }
+      },
+      "schedule": {
+        "days": [],
+        "time": []
+      }
+    }
+  }
+}
