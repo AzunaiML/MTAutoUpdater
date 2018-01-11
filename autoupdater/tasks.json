@@ -3,7 +3,7 @@
     "task-update":{
       "type": "update",
       "parameters":{
-        "files": ["1.xlsx", "2.xlsx"],
+        "files": ["\\filepeth\\1.xlsx", "\\filepeth\\2.xlsx"],
         "excel": "standard/manual",
         "vba": "./vba/Excel_update.bas",
         "archive": {
@@ -11,26 +11,32 @@
           "path": "\\filepath"
           }
       },
+      "timeout": 1000,
+      "command": "update-ttt",
       "schedule": {
         "days": [],
         "time": []
-      }
+      },
+      "help": ""
     },
 
     "task-download":{
       "type": "download",
       "parameters":{
         "connection-string": "",
-        "query": "1.sql",
+        "query": "\\filepeth\\1.sql",
         "destination":{
           "file-type": ".xlsx",
           "file-path": "\\path\\to\\file"
         }
       },
+      "command": "download-ttt",
+      "timeout": 1000,
       "schedule": {
         "days": [],
         "time": []
-      }
+      },
+      "help": ""
     }
   }
 }
