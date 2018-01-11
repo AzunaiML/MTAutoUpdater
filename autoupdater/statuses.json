@@ -1,0 +1,12 @@
+{
+  "statuses":
+  {
+    "status-name":
+    {
+      "path":[],
+      "command": "status",
+      "help": ""
+    }
+  }
+
+}
