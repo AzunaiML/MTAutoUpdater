@@ -23,7 +23,10 @@
     "task-download":{
       "type": "download",
       "parameters":{
+        "database-type": "oracle",
         "connection-string": "",
+        "user": "GVPonomarev",
+        "password": "sVsH295112358",
         "query": "\\filepeth\\1.sql",
         "destination":{
           "file-type": ".xlsx",
