@@ -20,6 +20,9 @@ class AbstractServer(ABC):
     def on_request(self, ch, method, props, body):
         pass
 
+    def send_log(self, message):
+        pass
+
     def run(self):
         self.channel.basic_consume(self.on_request, queue=self.read_queue)
         print(" [x] Awaiting RPC requests")
