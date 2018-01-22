@@ -10,5 +10,5 @@ work_servers = 2
 log_servers = 1
 status_servers = 1
 
-statuses_json_path = ''
-tasks_json_path = ''
+statuses_json_path = 'L:\\InfoCallCenterComDir\\!Гоше\\MTAutoUpdater\\autoupdater\\statuses.json'
+tasks_json_path = 'L:\\InfoCallCenterComDir\\!Гоше\\MTAutoUpdater\\autoupdater\\tasks.json'

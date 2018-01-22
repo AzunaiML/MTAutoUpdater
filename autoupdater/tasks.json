@@ -24,20 +24,20 @@
       "type": "download",
       "parameters":{
         "database-type": "oracle",
-        "connection-string": "",
+        "connection-string": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mn-asale-rep)(PORT=1521))(CONNECT_DATA=(SID=asale)))",
         "user": "GVPonomarev",
         "password": "sVsH295112358",
-        "query": "\\filepeth\\1.sql",
+        "query": "L:\\InfoCallCenterComDir\\!Гоше\\Консолидированный отчет\\SQL\\Active base.sql",
         "destination":{
           "file-type": ".xlsx",
-          "file-path": "\\path\\to\\file"
+          "file-path": "L:\\InfoCallCenterComDir\\!Гоше\\MTAutoUpdater\\test\\AB_raw"
         }
       },
-      "command": "download-ttt",
+      "command": "download-ab",
       "timeout": 1000,
       "schedule": {
-        "days": [],
-        "time": []
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "time": ["09:00"]
       },
       "help": ""
     }
