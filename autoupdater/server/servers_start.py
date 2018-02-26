@@ -44,6 +44,6 @@ if __name__ == '__main__':
         jobs.append(p)
         p.start()
 
-    time.sleep(20)
-    for i in jobs:
-        i.terminate()
+    #time.sleep(20)
+    #for i in jobs:
+    #    i.terminate()

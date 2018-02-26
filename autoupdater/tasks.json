@@ -33,7 +33,29 @@
           "file-path": "L:\\InfoCallCenterComDir\\!Гоше\\MTAutoUpdater\\test\\AB_raw"
         }
       },
-      "command": "download-ab",
+      "command": "download_ab",
+      "timeout": 1000,
+      "schedule": {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "time": ["09:00"]
+      },
+      "help": ""
+    },
+
+    "task-download-2":{
+      "type": "download",
+      "parameters":{
+        "database-type": "oracle",
+        "connection-string": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mn-asale-rep)(PORT=1521))(CONNECT_DATA=(SID=asale)))",
+        "user": "GVPonomarev",
+        "password": "sVsH295112358",
+        "query": "L:\\InfoCallCenterComDir\\!Гоше\\MTAutoUpdater\\test\\Test.sql",
+        "destination":{
+          "file-type": ".xlsx",
+          "file-path": "L:\\InfoCallCenterComDir\\!Гоше\\MTAutoUpdater\\test\\test_download"
+        }
+      },
+      "command": "download_test",
       "timeout": 1000,
       "schedule": {
         "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

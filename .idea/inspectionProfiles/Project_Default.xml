@@ -5,6 +5,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="testbot.self" />
+          <option value="cx_Oracle.connect" />
         </list>
       </option>
     </inspection_tool>

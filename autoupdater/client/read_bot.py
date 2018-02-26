@@ -32,7 +32,7 @@ def send_welcome(message):
     client = b.Sender()
     send_message(message.chat.id, "Hi!")
     m = {'n': 10, "chat_id": message.chat.id}
-    client.send(m, config.task_queue_name)
+    #client.send(m, config.task_queue_name)
 
 
 @bot.message_handler(commands=tasks_commands)
@@ -43,12 +43,13 @@ def read_tasks(message):
     for i in tasks:
         if i["command"] == text:
             task_name = i["task"]
-    json_f = json.load(open(config.tasks_json_path))
+    json_f = json.load(open(config.tasks_json_path, encoding='utf-8'))
     root = [i for i in json_f][0]
     task_content = json_f[root][task_name]
     task = {"chat_id": message.chat.id,
             "task-name": task_name,
             "task": task_content}
+    print(task)
     client.send(task, config.task_queue_name)
 
 
@@ -56,7 +57,7 @@ def read_tasks(message):
 def read_statuses(message):
     client = b.Sender()
     status = {}
-    client.send(status, config.status_queue_name)
+    #client.send(status, config.status_queue_name)
 
 
 def bot_start():

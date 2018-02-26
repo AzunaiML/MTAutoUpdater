@@ -14,7 +14,7 @@ def on_request(ch, method, props, body):
     body = body.decode('utf-8')
     message = json.loads(body)
     print(message)
-    send_message(message['chat_id'], message['fib'])
+    send_message(message['chat_id'], message['answer'])
 
 
 def send_message(chat_id, text):
